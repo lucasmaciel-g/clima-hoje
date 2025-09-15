@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima Hoje</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <main>
+      <header>
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <form action="" class="pesquisaCidade">
+          <div class="iconeLupa">
+            <img src="img/lupa.svg" alt="lupa para pesquisar">
+          </div>
+          <input type="text" placeholder= "Procure por cidades">
+        </form>
+      </header>
+      <section class="climaHoje">
+        <div class="climaAtual">
+          <div class="infoCidadeAtual">
+            <h1 class="nomeCidadeAtual">São Paulo</h1>
+            <span class="chanceCidadeAtual">Chance de chuva: 0%</span>
+          </div>
+          <span class="tempCidadeAtual">28°</span>
+        </div>
+        <div class="imgSolNuvem">
+          <img src="img/sol-nuvem.svg" alt="">
+        </div>
+      </section>
+      <div id="desfoque"></div>
+      <section class="bgClimaHora">
+        <div class="climaHora">
+          <div class="hora">
+            <span class="horario">6:00 AM</span>
+            <img src="img/nublado.svg" alt="">
+            <span class="tempHora">24º</span>
+          </div>
+          <div class="hora">
+            <span class="horario">9:00 AM</span>
+            <img src="img/sun-clouds.svg" alt="">
+            <span class="tempHora">28º</span>
+          </div>
+          <div class="hora">
+            <span class="horario">12:00 PM</span>
+            <img src="img/sol.svg" alt="">
+            <span class="tempHora">30º</span>
+          </div>
+          <div class="hora">
+            <span class="horario">3:00 PM</span>
+            <img src="img/sol.svg" alt="">
+            <span class="tempHora">32º</span>
+          </div>
+          <div class="hora">
+            <span class="horario">6:00 PM</span>
+            <img src="img/nuvens.svg" alt="">
+            <span class="tempHora">27º</span>
+          </div>
+          <div class="hora">
+            <span class="horario">9:00 PM</span>
+            <img src="img/lua-nuvem.svg" alt="">
+            <span class="tempHora">26º</span>
+          </div>
+        </div>
+      </section>
+      <section class="infoAdicional">
+        <div class="cardInfo">
+          <span class="tituloInfo">Sensação Térmica</span>
+          <div>
+            <img src="img/temperatura.svg" alt="">
+            <span class="dadoInfo">30º</span>
+          </div>
+        </div>
+        <div class="cardInfo">
+          <span class="tituloInfo">Chance de Chuva</span>
+          <div>
+            <img src="img/chuva.svg" alt="">
+            <span class="dadoInfo">0%</span>
+          </div>
+        </div>
+        <div class="cardInfo">
+          <span class="tituloInfo">Vento</span>
+          <div>
+            <img src="img/vento.svg" alt="">
+            <span class="dadoInfo">2</span>
+            <img id="imgKM" src="img/h.svg" alt="">
+          </div>
+        </div>
+        <div class="cardInfo">
+          <span class="tituloInfo">Índice UV</span>
+          <div>
+            <img src="img/uv.svg" alt="">
+            <span class="dadoInfo">4</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside class="bgPrevisaoSemana">
+      <div class="previsaoSemana">
+        <div class="diaSemana">
+          <span class="nomeDia">Segunda</span>
+          <div>
+            <img src="img/nublado-escuro.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">29°</span>
+            <span class="tempMin">23</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Terça</span>
+          <div>
+            <img src="img/sol-aside.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">33°</span>
+            <span class="tempMin">27</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Quarta</span>
+          <div>
+            <img src="img/sol.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">32°</span>
+            <span class="tempMin">26</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Quinta</span>
+          <div>
+            <img src="img/sol-encoberto-aside.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">30°</span>
+            <span class="tempMin">24</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Sexta</span>
+          <div>
+            <img src="img/clouds.png" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">28°</span>
+            <span class="tempMin">22</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Sábado</span>
+          <div>
+            <img src="img/rain.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">26°</span>
+            <span class="tempMin">20</span>
+          </div>
+        </div>
+        <div class="diaSemana">
+          <span class="nomeDia">Domingo</span>
+          <div>
+            <img src="img/sol-encoberto-aside.svg" alt="">
+          </div>
+          <div class="tempDia">
+            <span class="tempMax">30°</span>
+            <span class="tempMin">25</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

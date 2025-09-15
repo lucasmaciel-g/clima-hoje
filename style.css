@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e2eaf5;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: calc(910px + 103px + 397px);
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 88px;
+    position: relative;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 31px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.pesquisaCidade, .bgPrevisaoSemana{
+    display: flex;
+    /* align-items: center; */
+    gap: 11px;
+    background-color: #FDFFFE;
+    padding: 17.505px 16.12px;
+    border-radius: 16px;
+}
+
+.iconeLupa{
+    position: relative;
+    bottom: 2px;
+    border: none;
+    background-color: transparent;
+    max-height: 18.75px;
+}
+
+.pesquisaCidade input{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    width: 100%;
+}
+
+.pesquisaCidade input::placeholder{
+    color: #B1B8C0;
+    font-size: 16px;
+    height: 24px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -3.5;
+}
+
+.climaHoje{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+    margin: 45px 0;
+}
+
+.climaAtual{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.infoCidadeAtual{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.nomeCidadeAtual{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    color: #2A394F
+}
+
+.chanceCidadeAtual{
+    font-size: 20px;
+    font-weight: 500;
+    color: #9AA0A8
+}
+
+.tempCidadeAtual{
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 1;
+    color: #2A394F;
+}
+
+.imgSolNuvem{
+    display: flex;
+    align-items: center;
+}
+
+.imgSolNuvem img{
+    max-width: 100%;
+}
+
+#desfoque{
+    width: 820px;
+    height: 130px;
+    background-color: red;
+    border-radius: 40px;
+    position: absolute;
+    z-index: -1;
+    left: 54px;
+    top: 580px;
+    box-shadow: #017EFE80 0px 12px 50px 0px;
+}
+
+.bgClimaHora{
+    border-radius: 40px;
+    background: -webkit-linear-gradient(90deg, #007dfe,#3aa2ff);
+    background: linear-gradient(90deg, #007dfe,#3aa2ff);
+    margin-bottom: 45px;
+}
+
+.climaHora{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 35px 50px;
+}
+
+.hora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 191px;
+}
+
+.hora .horario{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hora img{
+    max-width: 100%;
+}
+
+.hora .tempHora{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.infoAdicional{
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 25px;
+    width: 219px;
+    height: 165.28px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    /* border: 1px solid blue; */
+}
+
+.tituloInfo{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: rgba(143, 143, 143, 0.75);
+}
+
+.cardInfo img{
+    max-height: 100%;
+}
+
+#imgKM{
+    align-self: center;
+} 
+
+.cardInfo div{
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.dadoInfo{
+    font-size: 43px;
+    font-weight: 700;
+    color: #2A394F;
+}
+
+.bgPrevisaoSemana{
+    margin-top: 55px;
+    padding: 50px 55px;
+    border-radius: 40px;
+}
+
+.previsaoSemana{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diaSemana{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    height: 90px;
+}
+
+.nomeDia, .tempMin{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: #8F8F8F
+}
+
+.diaSemana > span + div{
+    display: flex;
+}
+
+.tempDia{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 11px;
+}
+
+.tempMax{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: #2A394F
+}
