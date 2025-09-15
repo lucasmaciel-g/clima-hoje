@@ -181,7 +181,6 @@ header{
     height: 165.28px;
     border-radius: 40px;
     background-color: #FFFFFF;
-    /* border: 1px solid blue; */
 }
 
 .tituloInfo{
@@ -255,4 +254,63 @@ header{
     font-weight: 500;
     line-height: 1;
     color: #2A394F
+}
+
+/* Pseudo seletores */
+
+/* .infoAdicional > div:nth-child(3){
+    border: 1px solid red;
+} */
+
+/* Par */
+/* .previsaoSemana > div:nth-child(even){
+    background-color: rgb(232, 240, 255);
+} */
+
+/* Ímpar */
+/* .previsaoSemana > div:nth-child(odd){
+    background-color: rgb(232, 240, 255);
+} */
+
+.previsaoSemana > div:nth-child(3n){
+    background-color: rgb(232, 240, 255);
+}
+
+/* .previsaoSemana > div:last-child{
+    background-color: #E2EAF5;
+} */
+
+/* .previsaoSemana > div:first-child{
+    background-color: #E2EAF5;
+} */
+
+.megaSena{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.megaSena > ul{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+}
+
+.megaSena li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding: 8px 10px;
+    border: 1px solid rgb(66, 130, 66);
+    background-color: rgb(143, 192, 143);
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    list-style: none;
+}
+
+.megaSena li:not(#teste){
+    background-color: rgb(66, 130, 66);
 }
