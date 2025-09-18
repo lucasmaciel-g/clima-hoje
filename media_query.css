@@ -1,0 +1,58 @@
+@media screen and (max-width: 480px) {
+	.nomeCidadeAtual{
+		color: red;
+	}
+	
+	.container{
+		grid-template-columns: 1fr;
+    max-width: 100vw;
+		border: 1px solid red;
+	}
+
+	header{
+    grid-template-columns: 1fr;
+    justify-content: center;
+	}
+
+	.logo{
+		justify-content: center;
+	}
+
+	.climaHoje{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    margin: 45px 0;
+		border: 1px solid blue;
+	}
+	
+	.climaAtual{
+    gap: 24px;
+	}
+
+	.nomeCidadeAtual{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--cor-titulos)
+	}
+
+	.chanceCidadeAtual{
+    font-size: 20px;
+    font-weight: 500;
+    color: #9AA0A8
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.nomeCidadeAtual{
+		color: green;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.nomeCidadeAtual{
+		color: gold;
+	}
+}

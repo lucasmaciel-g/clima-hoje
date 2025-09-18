@@ -42,12 +42,14 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    gap: 11px;
 }
 
-.pesquisaCidade, .bgPrevisaoSemana{
+.logo img{
+    max-width: 100%;
+}
+
+.pesquisaCidade{
     display: flex;
-    /* align-items: center; */
     gap: 11px;
     background-color: #FDFFFE;
     padding: 17.505px 16.12px;
@@ -224,6 +226,8 @@ header{
 }
 
 .bgPrevisaoSemana{
+    display: flex;
+    background-color: #FDFFFE;
     margin-top: 55px;
     padding: 50px 55px;
     border-radius: var(--radius-card);
