@@ -10,6 +10,7 @@
     --cor-bg-card: #FFFFFF;
     --radius-pesquisa: 16px;
     --radius-card: 40px;
+    --radius-card-mobile: 32px;
 }
 
 *{
@@ -106,7 +107,7 @@ header{
     color: var(--cor-titulos)
 }
 
-.chanceCidadeAtual{
+.chanceCidadeAtual, footer > span{
     font-size: 20px;
     font-weight: 500;
     color: #9AA0A8
@@ -163,7 +164,7 @@ header{
     height: 191px;
 }
 
-.hora .horario{
+.horario{
     color: rgba(255, 255, 255, 0.75);
     font-size: 18px;
     font-weight: 500;
@@ -272,4 +273,11 @@ header{
     font-weight: 500;
     line-height: 1;
     color: var(--cor-titulos)
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }

@@ -1,14 +1,23 @@
 @media screen and (max-width: 480px) {
 
+	body{
+		max-width: 100vw;
+	}
+
 	.container{
 		grid-template-columns: 1fr;
-    max-width: 100vw;
-		border: 1px solid red;
+		margin: 0;
+		gap: 0;
+	}
+	
+	main{
+		max-width: 100vw;
+		padding: 20px;
 	}
 
 	header{
-    grid-template-columns: 1fr;
-    justify-content: center;
+		grid-template-columns: 1fr;
+		justify-content: center;
 	}
 
 	.logo{
@@ -18,51 +27,97 @@
 	/* Seção que tem nome da cidade, chance de chuva, temperatura e img sol */
 	.climaHoje{
 		position: relative;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 0;
-    margin: 45px 0;
-		border: 1px solid blue;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding: 0;
+		margin: 45px 0;
 	}
 	
 	.climaAtual{
-    gap: 24px;
+    	gap: 24px;
 	}
 
 	.nomeCidadeAtual{
-    font-size: 40px;
+    	font-size: 40px;
 	}
 
 	.chanceCidadeAtual{
-    font-size: 16px;
+    	font-size: 16px;
 	}
 
 	.tempCidadeAtual{
-    font-size: 64px;
+    	font-size: 64px;
 	}
 
 	.imgSolNuvem{
 		position: absolute;
-		width: 23%;
+		max-width: 53%;
 		right: 0px;
 		top: -12px;
 	}
 
 	#desfoque{
-    max-width: 84%;
-    left: 40px;
-    top: 510px;
+		max-width: 84%;
+		left: 40px;
+		top: 480px;
 	}
 
 	.bgClimaHora{
-    border-radius: var(--radius-card);
-    background: -webkit-linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
-    background: var(--cor-bg-degrade);
-    margin-bottom: 45px;
+		overflow-x: scroll;
+		border-radius: var(--radius-card-mobile);
 	}
 
+	.climaHora{
+		justify-content: start;
+		gap: 38px;
+    	padding: 24px 30px;
+	}
+
+	.hora{
+		justify-content: space-between;
+		gap: 24px;
+    	height: auto;
+	}
+
+	.climaHora > div:last-child{
+		padding-right: 38px;
+	}
+
+	.horario{
+		font-size: 12px;
+	}
+
+	.tempHora{
+		font-size: 24px;
+	    font-weight: 500;
+	}
 	
+	.infoAdicional{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		gap: 12px;
+	}
+	
+	.cardInfo{
+		gap: 0px;
+		padding: 0px;
+		height: 165.28px;
+	    width: 200px;
+		border-radius: var(--radius-card-mobile);
+	}
+	
+	.bgPrevisaoSemana{
+		justify-content: center;
+		margin: 38px 20px;
+		padding: 15px 30px;
+		border-radius: var(--radius-card-mobile);
+	}
+
+	.previsaoSemana{
+		gap: 12px;
+	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
