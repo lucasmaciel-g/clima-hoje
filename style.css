@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --cor-primaria: #007dfe;
+    --cor-secundaria: #3aa2ff;
+    --cor-textos: rgba(143, 143, 143, 0.75);
+    --cor-titulos: #2A394F;
+    --cor-bg: #e2eaf5;
+    --cor-bg-degrade: linear-gradient(90deg, #007dfe,#3aa2ff);
+    --cor-bg-card: #FFFFFF;
+    --radius-pesquisa: 16px;
+    --radius-card: 40px;
+    --radius-card-mobile: 32px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +20,7 @@
 }
 
 body{
-    background-color: #e2eaf5;
+    background-color: var(--cor-bg);
     font-family: "Poppins", sans-serif;
 }
 
@@ -30,16 +43,18 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    gap: 11px;
 }
 
-.pesquisaCidade, .bgPrevisaoSemana{
+.logo img{
+    max-width: 100%;
+}
+
+.pesquisaCidade{
     display: flex;
-    /* align-items: center; */
     gap: 11px;
     background-color: #FDFFFE;
     padding: 17.505px 16.12px;
-    border-radius: 16px;
+    border-radius: var(--radius-pesquisa);
 }
 
 .iconeLupa{
@@ -89,10 +104,10 @@ header{
     font-size: 50px;
     font-weight: 700;
     line-height: 1;
-    color: #2A394F
+    color: var(--cor-titulos)
 }
 
-.chanceCidadeAtual{
+.chanceCidadeAtual, footer > span{
     font-size: 20px;
     font-weight: 500;
     color: #9AA0A8
@@ -102,7 +117,7 @@ header{
     font-size: 85px;
     font-weight: 700;
     line-height: 1;
-    color: #2A394F;
+    color: var(--cor-titulos);
 }
 
 .imgSolNuvem{
@@ -111,6 +126,7 @@ header{
 }
 
 .imgSolNuvem img{
+    display: block;
     max-width: 100%;
 }
 
@@ -118,7 +134,7 @@ header{
     width: 820px;
     height: 130px;
     background-color: red;
-    border-radius: 40px;
+    border-radius: var(--radius-card);
     position: absolute;
     z-index: -1;
     left: 54px;
@@ -127,9 +143,9 @@ header{
 }
 
 .bgClimaHora{
-    border-radius: 40px;
-    background: -webkit-linear-gradient(90deg, #007dfe,#3aa2ff);
-    background: linear-gradient(90deg, #007dfe,#3aa2ff);
+    border-radius: var(--radius-card);
+    background: -webkit-linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    background: var(--cor-bg-degrade);
     margin-bottom: 45px;
 }
 
@@ -148,7 +164,7 @@ header{
     height: 191px;
 }
 
-.hora .horario{
+.horario{
     color: rgba(255, 255, 255, 0.75);
     font-size: 18px;
     font-weight: 500;
@@ -179,8 +195,8 @@ header{
     padding: 0 25px;
     width: 219px;
     height: 165.28px;
-    border-radius: 40px;
-    background-color: #FFFFFF;
+    border-radius: var(--radius-card);
+    background-color: var(--cor-bg-card);
     /* border: 1px solid blue; */
 }
 
@@ -188,7 +204,7 @@ header{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: -1px;
-    color: rgba(143, 143, 143, 0.75);
+    color: var(--cor-textos);
 }
 
 .cardInfo img{
@@ -208,13 +224,15 @@ header{
 .dadoInfo{
     font-size: 43px;
     font-weight: 700;
-    color: #2A394F;
+    color: var(--cor-titulos);
 }
 
 .bgPrevisaoSemana{
+    display: flex;
+    background-color: #FDFFFE;
     margin-top: 55px;
     padding: 50px 55px;
-    border-radius: 40px;
+    border-radius: var(--radius-card);
 }
 
 .previsaoSemana{
@@ -254,5 +272,12 @@ header{
     font-size: 18px;
     font-weight: 500;
     line-height: 1;
-    color: #2A394F
+    color: var(--cor-titulos)
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
